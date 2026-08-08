@@ -13,12 +13,12 @@ const pageSize = ref(3)
 </script>
 
 <template>
-  <div class="text-center font-sans text-gray-700 antialiased">
+  <div class="flex flex-col items-center w-full font-sans text-gray-700 antialiased">
     <header>
       <div id="flashMessage" v-if="message">
         <h4>{{ message }}</h4>
       </div>
-      <div class="wrapper">
+      <div class="wrapper flex flex-col items-center">
         <nav>
           <RouterLink :to="{ name: 'event-list-view' }">Event</RouterLink> |
           <RouterLink :to="{ name: 'about' }">About</RouterLink>
