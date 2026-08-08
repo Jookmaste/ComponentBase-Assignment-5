@@ -13,7 +13,7 @@ const pageSize = ref(3)
 </script>
 
 <template>
-  <div id="layout">
+  <div class="text-center font-sans text-gray-700 antialiased">
     <header>
       <div id="flashMessage" v-if="message">
         <h4>{{ message }}</h4>
@@ -40,17 +40,13 @@ const pageSize = ref(3)
 
 <style>
 
-#layout {
+/* #layout {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-h2 {
-  font-size: 20px;
-}
+} */
 
 nav {
   padding: 30px;
@@ -60,9 +56,13 @@ nav a {
   font-weight: bold;
   color: #2c3e50;
 }
-
+  
 nav a.router-link-exact-active {
   color: #42b983;
+}
+    
+h2 {
+  font-size: 20px;
 }
 
 .page-size button {

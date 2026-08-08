@@ -4,7 +4,7 @@
   import type { Event } from '@/types'
   import { ref, onMounted, computed, watchEffect } from 'vue'
   import EventService from '@/services/EventService'
-  import '../assets/main.css'
+  // import '../assets/main.css'
   // import { useRouter } from 'vue-router'
 
   // const router = useRouter()
