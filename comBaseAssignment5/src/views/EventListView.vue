@@ -4,6 +4,7 @@
   import type { Event } from '@/types'
   import { ref, onMounted, computed, watchEffect } from 'vue'
   import EventService from '@/services/EventService'
+  import '../assets/main.css'
   // import { useRouter } from 'vue-router'
 
   // const router = useRouter()
@@ -51,7 +52,7 @@
     <EventCard v-for="event in events" :key="event.id" :event="event" />
     <EventInfo v-for="event in events" :key="event.id" :event="event" />
 
-    <div class="flex items-center">
+    <div id="pagination">
       <RouterLink
       id="page-prev"
         :to="{ name: 'event-list-view', query: { page: page - 1} }"
@@ -77,10 +78,10 @@
   align-items: center;
 } */
 
-/* .pagination {
+.pagination {
   display: flex;
   width: 290px;
-} */
+}
 
 .pagination a {
   flex: 1;
