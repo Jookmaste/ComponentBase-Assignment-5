@@ -21,6 +21,8 @@
 </script>
 
 <template>
+  <div class="flex flex-col items-start mt-4 gap-4">
     <p>Register event here</p>
-    <button @click="register">Register</button>
+    <button class="px-3 py-1 border border-black rounded" @click="register">Register</button>
+  </div> 
 </template>

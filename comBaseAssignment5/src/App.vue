@@ -16,7 +16,7 @@ const pageSize = ref(3)
   <div class="flex flex-col items-center w-full font-sans text-gray-700 antialiased">
     <header>
       <div id="flashMessage" class="animate-fade" v-if="message">
-        <h4>{{ message }}</h4>
+        <h4 class="text-xl font-bold">{{ message }}</h4>
       </div>
       <div class="wrapper flex flex-col items-center">
         <nav class="py-6">
@@ -24,16 +24,14 @@ const pageSize = ref(3)
           :to="{ name: 'event-list-view' }">Event</RouterLink> |
           <RouterLink class="font-bold text-gray-700" exact-active-class="text-green-500"
           :to="{ name: 'about' }">About</RouterLink>
-          <!-- <RouterLink :to="{ name: 'event-list-view' }">Event</RouterLink> |
-          <RouterLink :to="{ name: 'about' }">About</RouterLink> -->
         </nav>
 
         <div class="page-size">
           <span>Page Size: </span>
-          <button @click="pageSize = 1">1</button>
-          <button @click="pageSize = 2">2</button>
-          <button @click="pageSize = 3">3</button>
-          <button @click="pageSize = 4">4</button>
+          <button class="mx-2" @click="pageSize = 1">1</button>
+          <button class="mx-2" @click="pageSize = 2">2</button>
+          <button class="mx-2" @click="pageSize = 3">3</button>
+          <button class="mx-2" @click="pageSize = 4">4</button>
         </div>
 
       </div>
@@ -43,27 +41,27 @@ const pageSize = ref(3)
 </template>
 
 <style>
-
-/* #layout {
+/* 
+#layout {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-} */
+} 
 
-/* nav {
+nav {
   padding: 30px;
-} */
+} 
 
-/* nav a {
+nav a {
   font-weight: bold;
   color: #2c3e50;
 }
 
 nav a.router-link-exact-active {
   color: #42b983;
-} */
+} 
 
 h2 {
   font-size: 20px;
@@ -73,16 +71,16 @@ h2 {
   margin: 0 4px;
 }
 
-/* @keyframes yellowFade {
+@keyframes yellowFade {
   from {
     background-color: yellow;
   }
   to {
     background-color: transparent;
   }
-} */
+} 
 
 #flashMessage {
   animation: yellowFade 3s ease-in-out;
-}
+} */
 </style>

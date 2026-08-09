@@ -8,17 +8,16 @@ defineProps<{
 </script>
 
 <template>
-  <div class="event-class">
-    <div class="event-info">
-      <h1>{{ event.category }}</h1>
-      <h1>{{ event.organizer }}</h1>
+  <div class="flex justify-center">
+    <div class="p-[20px] w-[250px] cursor-pointer border border-[#39495c] mb-[18px] text-right hover:scale-[1.01] hover:shadow-sp transition-transform">
+      <p class="text-[16px] mb-0">{{ event.category }}</p>
+      <p class="text-[16px] mb-0">{{ event.organizer }}</p>
     </div>
   </div>
 </template>
 
 <style scoped>
-
-  .event-class {
+  /* .event-class {
     display: flex;
     justify-content: center;
   }
@@ -39,5 +38,5 @@ defineProps<{
 
   h1 {
     font-size: 16px;
-  }
+  } */
 </style>

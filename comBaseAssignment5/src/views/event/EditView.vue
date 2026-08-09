@@ -23,6 +23,8 @@
 </script>
 
 <template>
+  <div class="flex flex-col items-start mt-4 gap-4">
     <p>Edit event here</p>
-    <button @click="edit">Edit</button>
+    <button class="px-3 py-1 border border-black rounded" @click="edit">Edit</button>
+  </div>   
 </template>

@@ -52,16 +52,16 @@
     <EventCard v-for="event in events" :key="event.id" :event="event" />
     <EventInfo v-for="event in events" :key="event.id" :event="event" />
 
-    <div id="pagination">
+    <div class="flex w-[290px]">
       <RouterLink
-      id="page-prev"
+        class="flex-1 text-left no-underline text-[#2c3e50]"
         :to="{ name: 'event-list-view', query: { page: page - 1} }"
         rel="prev"
         v-if="page != 1"
         >&#60; | Prev Page | </RouterLink>
 
       <RouterLink
-        id="page-next"
+        class="flex-1 text-right no-underline text-[#2c3e50]"
         :to="{name: 'event-list-view', query: { page: page + 1 } }"
         rel="next"
         v-if="hasNextPage"
@@ -71,12 +71,11 @@
 </template>
 
 <style scoped>
-
 /* .events {
   display: flex;
   flex-direction: column;
   align-items: center;
-} */
+}
 
 .pagination {
   display: flex;
@@ -95,5 +94,5 @@
 
 #page-next {
   text-align: right;
-}
+} */
 </style>

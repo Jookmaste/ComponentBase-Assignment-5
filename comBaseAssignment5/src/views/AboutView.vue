@@ -26,17 +26,17 @@
 <template>
 
     <h1>Student List</h1>
-    <div class="event">
+    <div class="flex flex-col items-center">
       <StudentCard v-for="student in students" :key="student.id" :student="student" />
     </div>
   
 </template>
 
 <style scoped>
-.events {
+/* .events {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 </style>
 
