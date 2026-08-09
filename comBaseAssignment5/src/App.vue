@@ -15,7 +15,7 @@ const pageSize = ref(3)
 <template>
   <div class="flex flex-col items-center w-full font-sans text-gray-700 antialiased">
     <header>
-      <div id="flashMessage" v-if="message">
+      <div id="flashMessage" class="animate-fade" v-if="message">
         <h4>{{ message }}</h4>
       </div>
       <div class="wrapper flex flex-col items-center">
@@ -56,15 +56,15 @@ const pageSize = ref(3)
   padding: 30px;
 } */
 
-nav a {
+/* nav a {
   font-weight: bold;
   color: #2c3e50;
 }
-  
+
 nav a.router-link-exact-active {
   color: #42b983;
-}
-    
+} */
+
 h2 {
   font-size: 20px;
 }
@@ -73,14 +73,14 @@ h2 {
   margin: 0 4px;
 }
 
-@keyframes yellowFade {
+/* @keyframes yellowFade {
   from {
     background-color: yellow;
   }
   to {
     background-color: transparent;
   }
-}
+} */
 
 #flashMessage {
   animation: yellowFade 3s ease-in-out;
