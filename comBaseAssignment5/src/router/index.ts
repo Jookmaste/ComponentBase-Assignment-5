@@ -46,17 +46,17 @@ const router = createRouter({
       },
       children: [
         {
-          path: '/event/:id',
+          path: '',
           name: 'event-detail-view',
           component: EventDetailView,
         },
         {
-          path: '/event/:id/register',
+          path: 'register',
           name: 'event-register-view',
           component: EventRegisterView,
         },
         {
-          path: '/event/:id/edit',
+          path: 'edit',
           name: 'event-edit-view',
           component: EventEditView,
         }
@@ -69,7 +69,7 @@ const router = createRouter({
     },
     {
       path: '/404/:resource',
-      name: '/404-resource-view',
+      name: '404-resource-view',
       component: NotFoundView,
       props: true
     },
