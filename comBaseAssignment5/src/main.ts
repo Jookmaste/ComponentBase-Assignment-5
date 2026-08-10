@@ -9,9 +9,7 @@ import 'nprogress/nprogress.css'
 const app = createApp(App)
 
 import { inject } from '@vercel/analytics'
-import { injectSpeedInsights } from '@vercel/speed-insights'
 inject()
-injectSpeedInsights()
 
 app.use(createPinia())
 app.use(router)
